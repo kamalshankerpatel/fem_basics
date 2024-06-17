@@ -1,6 +1,6 @@
 The motivation to create the Introduction to FEniCS course stems from several key objectives to address the needs and challenges faced by students and professionals in engineering and science disciplines. These motivations include:
 
-1. **Bridging the Gap in PDE Problem-Solving Skills:**
+1. **Bridging the Gap in PDE Problem-Solving Skills:**  
 	   The course is designed to equip participants with the necessary tools to solve partial differential equations (PDEs), which are prevalent in various fields such as solid mechanics, heat transfer, and mass transport. There is a recognized need for advanced problem-solving skills in these areas, and FEniCS offers a robust solution.
 2. **Introducing High-Performance Computing (HPC) to a Wider Audience:**
 	   FEniCS is not just another computational tool; it's a high-performance computing-capable platform that can significantly enhance the efficiency and scope of scientific computations. The course aims to democratize access to HPC capabilities, enabling more researchers and practitioners to perform large-scale simulations and complex analyses.

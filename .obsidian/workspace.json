@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "write_here/docs/1_introduction/1_motivation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "write_here/docs/1_introduction/1_motivation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "write_here/docs/1_introduction/1_motivation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "write_here/docs/1_introduction/1_motivation.md"
               }
             }
           },
@@ -179,6 +179,7 @@
   },
   "active": "faead026aa1841dd",
   "lastOpenFiles": [
+    "README.md",
     "write_here/docs/attachments/Pasted image 20231219133930.png",
     "write_here/docs/1_introduction/4_faq.md",
     "write_here/docs/1_introduction/3_quickstart.md",
@@ -191,7 +192,6 @@
     "attachments/Pasted image 20240120214240.png",
     "attachments",
     "mkdocs/docs/index.md",
-    "README.md",
     "mkdocs/docs/img/logo.afdesign",
     "mkdocs/docs/img/favicon.ico",
     "mkdocs/docs/img/favicon.png",
@@ -220,7 +220,6 @@
     "mkdocs/docs/1_codes/4_contributing.md",
     "docs/css/fonts/fontawesome-webfont.svg",
     "docs/img/logo.svg",
-    "mkdocs/site/css/fonts/fontawesome-webfont.svg",
     "admin/architecture.canvas",
     "admin/idp.md",
     "admin/7_meetings/Meeting - 2024-01-09.md",
