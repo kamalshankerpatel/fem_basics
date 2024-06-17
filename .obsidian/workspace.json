@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "write_here/docs/00_introduction/4_faq.md",
+                "file": "write_here/docs/00_introduction/2_installation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "write_here/docs/00_introduction/4_faq.md",
+                "file": "write_here/docs/00_introduction/2_installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "write_here/docs/00_introduction/4_faq.md",
+                "file": "write_here/docs/00_introduction/2_installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "write_here/docs/00_introduction/4_faq.md"
+                "file": "write_here/docs/00_introduction/2_installation.md"
               }
             }
           },
@@ -179,8 +179,8 @@
   },
   "active": "faead026aa1841dd",
   "lastOpenFiles": [
-    "write_here/docs/00_introduction/3_quickstart.md",
     "write_here/docs/00_introduction/4_faq.md",
+    "write_here/docs/00_introduction/3_quickstart.md",
     "write_here/docs/00_introduction/2_installation.md",
     "write_here/docs/00_introduction/1_motivation.md",
     "docs/attachments/Pasted image 20231219133930.png",
