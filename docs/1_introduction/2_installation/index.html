@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>2 installation - My Notes</title>
+    <title>Installation Guide for VS Code, Python, and Necessary Libraries - My Notes</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -14,7 +14,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "2 installation";
+        var mkdocs_page_name = "Installation Guide for VS Code, Python, and Necessary Libraries";
         var mkdocs_page_input_path = "1_introduction/2_installation.md";
         var mkdocs_page_url = null;
       </script>
@@ -55,8 +55,34 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../1_motivation/">1 motivation</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2 installation</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Installation Guide for VS Code, Python, and Necessary Libraries</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-1-install-visual-studio-code">Step 1: Install Visual Studio Code</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#for-windows">For Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-macos">For macOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-linux">For Linux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-2-install-python">Step 2: Install Python</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#for-windows_1">For Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-macos_1">For macOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-linux_1">For Linux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-3-install-necessary-python-libraries">Step 3: Install Necessary Python Libraries</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-4-configure-vs-code-for-python">Step 4: Configure VS Code for Python</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../3_quickstart/">3 quickstart</a>
@@ -89,7 +115,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">1 introduction</li>
-      <li class="breadcrumb-item active">2 installation</li>
+      <li class="breadcrumb-item active">Installation Guide for VS Code, Python, and Necessary Libraries</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -98,39 +124,199 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="prerequisites">Prerequisites</h2>
-<p>To follow along with the examples, you need to install docker on your system. You need Windows 10/11 Education or Professional for this to work. This does not work on Windows 10/11 Home.</p>
-<ul>
-<li><a href="https://www.docker.com/products/docker-desktop">Docker</a></li>
-<li><a href="https://www.paraview.org/download/">Paraview</a></li>
+                <h1 id="installation-guide-for-vs-code-python-and-necessary-libraries">Installation Guide for VS Code, Python, and Necessary Libraries</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This guide will walk you through the steps to install Visual Studio Code (VS Code), Python, and the necessary Python libraries like NumPy on your system. Follow these simple steps to set up your development environment.</p>
+<h2 id="step-1-install-visual-studio-code">Step 1: Install Visual Studio Code</h2>
+<h3 id="for-windows">For Windows</h3>
+<ol>
 <li>
-<p><a href="https://cmder.net/">CMDER</a> (Only for Windows) (After installation, open <code>cmder</code> and then go to Settings(Win+Alt+P)➡import and choose the <code>cmlab.xml</code> provided in the repository.)</p>
+<p><strong>Download VS Code</strong>:</p>
+<ul>
+<li>Go to the <a href="https://code.visualstudio.com/">Visual Studio Code website</a>.</li>
+<li>Click on the "Download for Windows" button.</li>
+<li>
+<p><strong>Install VS Code</strong>:</p>
 </li>
 <li>
-<p><a href="https://www.google.com/chrome/">Google Chrome</a> (After installation, open Chrome and paste the following in the address bar, <code>chrome://flags/.</code> In the flags screen, enable <code>WebGL Developer Extensions</code> )</p>
+<p>Once the download is complete, open the downloaded <code>.exe</code> file.</p>
+</li>
+<li>Follow the installation instructions. During the installation, make sure to check the boxes for:<ul>
+<li>"Add to PATH"</li>
+<li>"Register Code as an editor for supported file types"</li>
+<li>"Add 'Open with Code' action to Windows Explorer file context menu"</li>
+<li>"Add 'Open with Code' action to Windows Explorer directory context menu"</li>
+</ul>
+</li>
+<li>
+<p><strong>Launch VS Code</strong>:</p>
+</li>
+<li>
+<p>After installation, open VS Code from the Start menu or desktop shortcut.</p>
 </li>
 </ul>
-<h2 id="install-fenics">Install FEniCS</h2>
-<p>Once the docker system is installed and running, open CMDER/terminal and run:</p>
-<pre><code>docker pull iitrabhi/fenics_notebook
-</code></pre>
-<h2 id="running">Running</h2>
-<p>To start the notebook server, use the following:</p>
-<pre><code>docker run -p 8888:8888 -v host_system_path:/root/ -w /root/ iitrabhi/fenics_notebook
-</code></pre>
-<p>Note: you should replace the variable <code>host_system_path</code> with the path of the folder that contains your code. e.g., If  <code>D:\Codes</code> contains your code, then to start the command line interface, you have to run:</p>
-<pre><code>docker run -p 8888:8888 -v D:\Codes:/root/ -w /root/ iitrabhi/fenics_notebook
-</code></pre>
-<p>Once you run the above command in <code>cmder,</code> you will get a URL starting with <code>http://127.0.0.1:8888/lab</code>. Press Control and click on the URL to open a new Jupyter Notebook.</p>
-<h2 id="if-you-have-windows-home">If you have Windows home</h2>
-<p>You can use google collab to run FEniCS on the cloud. <a href="https://research.google.com/colaboratory/">Open Collab</a>, upload your notebook and paste the following in the first cell of your notebook.</p>
-<pre><code class="language-copy">try:
-    import dolfin
-except ImportError:
-    !wget &quot;https://fem-on-colab.github.io/releases/fenics-install.sh&quot; -O &quot;/tmp/fenics-install.sh&quot; &amp;&amp; bash &quot;/tmp/fenics-install.sh&quot;
-    import dolfin
-</code></pre>
-<p>https://fem-on-colab.github.io/packages.html</p>
+</li>
+</ol>
+<h3 id="for-macos">For macOS</h3>
+<ol>
+<li>
+<p><strong>Download VS Code</strong>:</p>
+<ul>
+<li>Go to the <a href="https://code.visualstudio.com/">Visual Studio Code website</a>.</li>
+<li>Click on the "Download for macOS" button.</li>
+<li>
+<p><strong>Install VS Code</strong>:</p>
+</li>
+<li>
+<p>Open the downloaded <code>.zip</code> file and drag the Visual Studio Code app to the Applications folder.</p>
+</li>
+<li>
+<p><strong>Launch VS Code</strong>:</p>
+</li>
+<li>
+<p>Open VS Code from the Applications folder.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="for-linux">For Linux</h3>
+<ol>
+<li>
+<p><strong>Download and Install VS Code</strong>:</p>
+<ul>
+<li>
+<p>Open a terminal and run the following commands based on your distribution:</p>
+<p><strong>Debian and Ubuntu based distributions</strong>:</p>
+<p>sh</p>
+<p>Copy code</p>
+<p><code>sudo apt update sudo apt install software-properties-common apt-transport-https wget wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" sudo apt update sudo apt install code</code></p>
+<p><strong>Fedora based distributions</strong>:</p>
+<p>sh</p>
+<p>Copy code</p>
+<p><code>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" &gt; /etc/yum.repos.d/vscode.repo' sudo dnf check-update sudo dnf install code</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Launch VS Code</strong>:</p>
+<ul>
+<li>Open VS Code from your application menu or by typing <code>code</code> in the terminal.</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-2-install-python">Step 2: Install Python</h2>
+<h3 id="for-windows_1">For Windows</h3>
+<ol>
+<li>
+<p><strong>Download Python</strong>:</p>
+<ul>
+<li>Go to the <a href="https://www.python.org/">Python website</a>.</li>
+<li>Click on "Downloads" and then download the latest version of Python for Windows.</li>
+<li>
+<p><strong>Install Python</strong>:</p>
+</li>
+<li>
+<p>Open the downloaded <code>.exe</code> file.</p>
+</li>
+<li>Check the box that says "Add Python to PATH".</li>
+<li>Click "Install Now" and follow the instructions.</li>
+</ul>
+</li>
+</ol>
+<h3 id="for-macos_1">For macOS</h3>
+<ol>
+<li>
+<p><strong>Download Python</strong>:</p>
+<ul>
+<li>Go to the <a href="https://www.python.org/">Python website</a>.</li>
+<li>Click on "Downloads" and then download the latest version of Python for macOS.</li>
+<li>
+<p><strong>Install Python</strong>:</p>
+</li>
+<li>
+<p>Open the downloaded <code>.pkg</code> file and follow the installation instructions.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="for-linux_1">For Linux</h3>
+<ol>
+<li><strong>Install Python</strong>:<ul>
+<li>
+<p>Open a terminal and run the following commands based on your distribution:</p>
+<p><strong>Debian and Ubuntu based distributions</strong>:</p>
+<p>sh</p>
+<p>Copy code</p>
+<p><code>sudo apt update sudo apt install python3 python3-pip</code></p>
+<p><strong>Fedora based distributions</strong>:</p>
+<p>sh</p>
+<p>Copy code</p>
+<p><code>sudo dnf install python3 python3-pip</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-3-install-necessary-python-libraries">Step 3: Install Necessary Python Libraries</h2>
+<ol>
+<li>
+<p><strong>Open Terminal or Command Prompt</strong>:</p>
+<ul>
+<li>For Windows, open Command Prompt.</li>
+<li>For macOS and Linux, open Terminal.</li>
+<li>
+<p><strong>Install NumPy and Other Libraries</strong>:</p>
+</li>
+<li>
+<p>Run the following command to install NumPy:</p>
+<p>sh</p>
+<p>Copy code</p>
+<p><code>pip install numpy</code></p>
+</li>
+<li>
+<p>If you need other libraries (e.g., matplotlib, scipy), you can install them similarly:</p>
+<p>sh</p>
+<p>Copy code</p>
+<p><code>pip install matplotlib scipy</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="step-4-configure-vs-code-for-python">Step 4: Configure VS Code for Python</h2>
+<ol>
+<li>
+<p><strong>Open VS Code</strong>:</p>
+<ul>
+<li>Launch VS Code.</li>
+<li>
+<p><strong>Install Python Extension</strong>:</p>
+</li>
+<li>
+<p>Click on the Extensions view icon on the Sidebar or press <code>Ctrl+Shift+X</code>.</p>
+</li>
+<li>Search for "Python" and click "Install" on the extension published by Microsoft.</li>
+<li>
+<p><strong>Select Python Interpreter</strong>:</p>
+</li>
+<li>
+<p>Open the Command Palette by pressing <code>Ctrl+Shift+P</code>.</p>
+</li>
+<li>Type "Python: Select Interpreter" and select the Python interpreter you installed.</li>
+<li>
+<p><strong>Create a New Python File</strong>:</p>
+</li>
+<li>
+<p>Go to File &gt; New File and save it with a <code>.py</code> extension (e.g., <code>hello.py</code>).</p>
+</li>
+<li>
+<p><strong>Write and Run Python Code</strong>:</p>
+</li>
+<li>
+<p>Write your Python code in the new file.</p>
+</li>
+<li>Run the code by pressing <code>Ctrl+F5</code>.</li>
+</ul>
+</li>
+</ol>
               
             </div>
           </div><footer>
