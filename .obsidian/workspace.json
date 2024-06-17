@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "write_here/docs/1_introduction/1_motivation.md",
+                "file": "write_here/docs/1_introduction/2_installation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "write_here/docs/1_introduction/1_motivation.md",
+                "file": "write_here/docs/1_introduction/2_installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "write_here/docs/1_introduction/1_motivation.md",
+                "file": "write_here/docs/1_introduction/2_installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "write_here/docs/1_introduction/1_motivation.md"
+                "file": "write_here/docs/1_introduction/2_installation.md"
               }
             }
           },
@@ -179,6 +179,7 @@
   },
   "active": "faead026aa1841dd",
   "lastOpenFiles": [
+    "write_here/docs/1_introduction/1_motivation.md",
     "docs/attachments/Pasted image 20231219133930.png",
     "docs/attachments",
     "docs/1_introduction/4_faq/index.html",
@@ -195,7 +196,6 @@
     "write_here/docs/1_introduction/4_faq.md",
     "write_here/docs/1_introduction/3_quickstart.md",
     "write_here/docs/1_introduction/2_installation.md",
-    "write_here/docs/1_introduction/1_motivation.md",
     "attachments/Pasted image 20240120214426.png",
     "attachments/Pasted image 20240120214354.png",
     "attachments/Pasted image 20240120214240.png",
@@ -220,7 +220,6 @@
     "mkdocs/README.md",
     "mkdocs/docs/1_codes/4_contributing.md",
     "docs/css/fonts/fontawesome-webfont.svg",
-    "docs/img/logo.svg",
     "admin/architecture.canvas",
     "admin/idp.md",
     "admin/7_meetings/Meeting - 2024-01-09.md",
