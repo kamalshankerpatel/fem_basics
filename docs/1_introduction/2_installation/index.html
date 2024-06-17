@@ -187,16 +187,16 @@
 <li>
 <p>Open a terminal and run the following commands based on your distribution:</p>
 <p><strong>Debian and Ubuntu based distributions</strong>:</p>
-<p>sh</p>
-<p>Copy code</p>
-<p><code>sudo apt update sudo apt install software-properties-common apt-transport-https wget wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" sudo apt update sudo apt install code</code></p>
-<p><strong>Fedora based distributions</strong>:</p>
-<p>sh</p>
-<p>Copy code</p>
-<p><code>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" &gt; /etc/yum.repos.d/vscode.repo' sudo dnf check-update sudo dnf install code</code></p>
 </li>
 </ul>
 </li>
+</ol>
+<pre><code>sudo apt update sudo apt install software-properties-common apt-transport-https wget wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - sudo add-apt-repository &quot;deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main&quot; sudo apt update sudo apt install code
+</code></pre>
+<p><strong>Fedora based distributions</strong>:</p>
+<pre><code>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc sudo sh -c 'echo -e &quot;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&quot; &gt; /etc/yum.repos.d/vscode.repo' sudo dnf check-update sudo dnf install code
+</code></pre>
+<ol>
 <li>
 <p><strong>Launch VS Code</strong>:</p>
 <ul>
@@ -245,17 +245,15 @@
 <li>
 <p>Open a terminal and run the following commands based on your distribution:</p>
 <p><strong>Debian and Ubuntu based distributions</strong>:</p>
-<p>sh</p>
-<p>Copy code</p>
-<p><code>sudo apt update sudo apt install python3 python3-pip</code></p>
-<p><strong>Fedora based distributions</strong>:</p>
-<p>sh</p>
-<p>Copy code</p>
-<p><code>sudo dnf install python3 python3-pip</code></p>
 </li>
 </ul>
 </li>
 </ol>
+<pre><code>sudo apt update sudo apt install python3 python3-pip
+</code></pre>
+<p><strong>Fedora based distributions</strong>:</p>
+<pre><code>sudo dnf install python3 python3-pip
+</code></pre>
 <h2 id="step-3-install-necessary-python-libraries">Step 3: Install Necessary Python Libraries</h2>
 <ol>
 <li>
@@ -270,17 +268,17 @@
 <p>Run the following command to install NumPy:</p>
 <p>sh</p>
 <p>Copy code</p>
-<p><code>pip install numpy</code></p>
-</li>
-<li>
-<p>If you need other libraries (e.g., matplotlib, scipy), you can install them similarly:</p>
-<p>sh</p>
-<p>Copy code</p>
-<p><code>pip install matplotlib scipy</code></p>
 </li>
 </ul>
 </li>
 </ol>
+<pre><code>pip install numpy
+</code></pre>
+<ul>
+<li>If you need other libraries (e.g., matplotlib, scipy), you can install them similarly:</li>
+</ul>
+<pre><code>pip install matplotlib scipy
+</code></pre>
 <h2 id="step-4-configure-vs-code-for-python">Step 4: Configure VS Code for Python</h2>
 <ol>
 <li>
