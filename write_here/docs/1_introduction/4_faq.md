@@ -1,16 +1,69 @@
-## Where to find help
+# Where to Find Online Help?
 
-When in doubt about any specific FEniCS command or implementation, there are several resources you can refer to for clarification and assistance:
+## Online Forums and Communities
 
-1. **FEniCS Book:** The official FEniCS book is an invaluable resource. It provides comprehensive documentation, tutorials, examples, and detailed explanations of all FEniCS functionalities. You can find it at: [The FEniCS Book](https://fenicsproject.org/book/)
-2. **FEniCS Q&A Forum:** The FEniCS Q&A forum is an active community where users and developers discuss issues, ask questions, and share knowledge about FEniCS. You can post your questions here and get help from experienced FEniCS users and developers. Access the forum at [FEniCS discourse](https://fenicsproject.discourse.group/)
-3. **FEniCS Workshop Slack channel:** You can also join the FEniCS workshop community on Slack to connect with other users, developers, and experts in the field. Slack is an excellent platform for real-time discussions, sharing knowledge, and getting help with FEniCS-related topics. You can join the Slack community by using [this link](https://join.slack.com/t/fenicsworkshop/shared_invite/zt-1zqrdlvmr-LziJQ59NdEOBzn7YZf59hg). 
-4. **FEniCS online documentation:** The online documentation since V1.3.0 is available at [this link](https://fenicsproject.org/olddocs/dolfin/). You can go into the python folder of any version to find the syntax and meaning of different commands. The latest version is not that descriptive, and thus I recommend checking out older documentation, as most of the commands are the same.
+1. **Stack Overflow**:
+   - Stack Overflow is a popular platform for asking and answering coding-related questions, including those on finite element analysis (FEA). You can find numerous threads and discussions related to FEA, Python programming, and numerical methods.
+   - Website: [Stack Overflow](https://stackoverflow.com/)
 
-Note: Please go through the official community [page here](https://fenicsproject.org/community/).
+2. **Reddit**:
+   - Reddit has several communities where you can ask questions and share information about FEA and related topics. Some relevant subreddits include:
+     - r/Engineering
+     - r/MechanicalEngineering
+     - r/civilengineering
+   - Website: [Reddit](https://www.reddit.com/)
 
-## Books to read
-1. Bleyer, Jeremy. “Numerical Tours of Continuum Mechanics Using FEniCS,” n.d., 105.
-2. Langtangen, Hans Petter, and Anders Logg. “Solving PDEs in Python – The FEniCS Tutorial Volume I,” n.d., 153.
-3. Langtangen, Hans Petter, and Kent-Andre Mardal. “Introduction to Numerical Methods for Variational Problems”. Vol. 21. Texts in Computational Science and Engineering. Cham: Springer International Publishing, 2019. https://doi.org/10.1007/978-3-030-23788-2.
-4. Logg, Anders, Kent-Andre Mardal, and Garth Wells, eds. “Automated Solution of Differential Equations by the Finite Element Method”. Vol. 84. Lecture Notes in Computational Science and Engineering. Berlin, Heidelberg: Springer Berlin Heidelberg, 2012. https://doi.org/10.1007/978-3-642-23099-8.
+3. **ResearchGate**:
+   - ResearchGate is a professional network for scientists and researchers. You can ask questions, share research papers, and connect with other professionals in the field of FEA.
+   - Website: [ResearchGate](https://www.researchgate.net/)
+
+4. **EigenPlus**:
+   - EigenPlus offers a variety of resources and discussions on finite element methods. It's a valuable resource for both beginners and advanced users looking for tutorials, articles, and community support.
+   - Website: [EigenPlus](https://eigenplus.com/)
+
+## Online Courses and Tutorials
+
+1. **Coursera**:
+   - Coursera offers online courses from universities and colleges around the world. You can find courses specifically on finite element analysis and related topics.
+   - Website: [Coursera](https://www.coursera.org/)
+
+2. **edX**:
+   - edX provides online courses from top universities and institutions. You can enroll in courses related to FEA, mechanical engineering, and computational mechanics.
+   - Website: [edX](https://www.edx.org/)
+
+3. **YouTube**:
+   - YouTube has a wealth of tutorial videos on FEA. Channels like Learn Engineering and SimScale offer step-by-step guides and explanations of FEA concepts.
+   - Website: [YouTube](https://www.youtube.com/)
+
+## Documentation and Libraries
+
+1. **NumPy Documentation**:
+   - NumPy is a fundamental library for numerical computations in Python. The official documentation provides detailed explanations and examples for using NumPy in FEA applications.
+   - Website: [NumPy Documentation](https://numpy.org/doc/)
+
+2. **SciPy Documentation**:
+   - SciPy builds on NumPy and provides additional functionality for scientific and engineering computations. The official documentation is a great resource for learning how to use SciPy for FEA.
+   - Website: [SciPy Documentation](https://docs.scipy.org/doc/scipy/)
+
+3. **Matplotlib Documentation**:
+   - Matplotlib is a plotting library for Python. The documentation offers comprehensive guides and examples for visualizing FEA results.
+   - Website: [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+
+# Recommended Books for Finite Element Analysis
+
+1. **"The Finite Element Method: Linear Static and Dynamic Finite Element Analysis" by Thomas J. R. Hughes**
+   - This book provides a comprehensive introduction to both the theory and application of the finite element method, covering linear static and dynamic problems.
+
+2. **"Concepts and Applications of Finite Element Analysis" by Robert D. Cook, David S. Malkus, Michael E. Plesha, and Robert J. Witt**
+   - A widely used textbook that offers a clear understanding of the finite element method's principles and its practical applications across various fields.
+
+3. **"Finite Element Procedures" by Klaus-Jürgen Bathe**
+   - This book is known for its detailed explanation of finite element procedures and practical applications, making it a valuable resource for both students and professionals.
+
+4. **"An Introduction to the Finite Element Method" by J. N. Reddy**
+   - Reddy's book is excellent for beginners, providing a thorough introduction to the fundamentals of the finite element method with practical examples and exercises.
+
+5. **"A First Course in Finite Elements" by Jacob Fish and Ted Belytschko**
+   - This book is designed for undergraduate students and offers an accessible entry point into the world of finite elements, with clear explanations and practical examples.
+
+These resources, combined with online help, will provide a robust foundation for understanding and applying finite element analysis in various engineering and scientific applications.
