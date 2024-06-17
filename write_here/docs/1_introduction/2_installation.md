@@ -45,19 +45,14 @@ This guide will walk you through the steps to install Visual Studio Code (VS Cod
         
         **Debian and Ubuntu based distributions**:
         
-        sh
+```
+sudo apt update sudo apt install software-properties-common apt-transport-https wget wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" sudo apt update sudo apt install code
+```
         
-        Copy code
-        
-        `sudo apt update sudo apt install software-properties-common apt-transport-https wget wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" sudo apt update sudo apt install code`
-        
-        **Fedora based distributions**:
-        
-        sh
-        
-        Copy code
-        
-        `sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo' sudo dnf check-update sudo dnf install code`
+**Fedora based distributions**:
+```
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo' sudo dnf check-update sudo dnf install code
+```
         
 2. **Launch VS Code**:
     
@@ -93,20 +88,15 @@ This guide will walk you through the steps to install Visual Studio Code (VS Cod
     - Open a terminal and run the following commands based on your distribution:
         
         **Debian and Ubuntu based distributions**:
+```
+sudo apt update sudo apt install python3 python3-pip
+```
+
+**Fedora based distributions**:
         
-        sh
-        
-        Copy code
-        
-        `sudo apt update sudo apt install python3 python3-pip`
-        
-        **Fedora based distributions**:
-        
-        sh
-        
-        Copy code
-        
-        `sudo dnf install python3 python3-pip`
+```
+sudo dnf install python3 python3-pip
+```
         
 
 ## Step 3: Install Necessary Python Libraries
@@ -122,18 +112,15 @@ This guide will walk you through the steps to install Visual Studio Code (VS Cod
         sh
         
         Copy code
-        
-        `pip install numpy`
-        
-    - If you need other libraries (e.g., matplotlib, scipy), you can install them similarly:
-        
-        sh
-        
-        Copy code
-        
-        `pip install matplotlib scipy`
+```
+pip install numpy
+```
         
 
+- If you need other libraries (e.g., matplotlib, scipy), you can install them similarly:
+```
+pip install matplotlib scipy
+```
 ## Step 4: Configure VS Code for Python
 
 1. **Open VS Code**:
