@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>1 computer and memory - My Notes</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/_mkdocstrings.css" rel="stylesheet" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "1 computer and memory";
+        var mkdocs_page_input_path = "1_understanding_computers/1_computer_and_memory.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../img/logo.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">00 introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_introduction/1_motivation/">1 motivation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_introduction/2_installation/">2 installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_introduction/3_quickstart/">3 quickstart</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../00_introduction/4_faq/">Where to Find Online Help?</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1 understanding computers</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">1 computer and memory</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#key-concepts">Key Concepts</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#significant-figures">Significant Figures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rounding-errors">Rounding Errors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accumulation-of-errors">Accumulation of Errors</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#example-rocket-trajectory-calculation">Example: Rocket Trajectory Calculation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#given-data">Given Data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#formula">Formula</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calculation-with-high-precision">Calculation with High Precision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calculation-with-limited-precision">Calculation with Limited Precision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#difference-and-impact">Difference and Impact</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2 chapter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../2_chapter/1_lesson/">1 lesson</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3 chapter</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../3_chapter/1_lesson/">1 lesson</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My Notes</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">1 understanding computers</li>
+      <li class="breadcrumb-item active">1 computer and memory</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="introduction">Introduction</h2>
+<p>In engineering, precision in calculations is crucial for mission success. Even small errors in trajectory calculations can lead to significant deviations over long distances, potentially causing a rocket to miss its target, fail to enter the correct orbit, or even crash.</p>
+<h3 id="key-concepts">Key Concepts</h3>
+<h4 id="significant-figures">Significant Figures</h4>
+<p>Significant figures are the digits in a number that contribute to its precision. Using more significant figures means higher precision in measurements and calculations.</p>
+<h4 id="rounding-errors">Rounding Errors</h4>
+<p>Rounding errors are introduced when numbers are rounded off to a limited number of significant figures.</p>
+<h4 id="accumulation-of-errors">Accumulation of Errors</h4>
+<p>In complex calculations, small rounding errors can accumulate, leading to significant deviations in results.</p>
+<h3 id="example-rocket-trajectory-calculation">Example: Rocket Trajectory Calculation</h3>
+<p>Consider a simplified scenario where we need to calculate the position of a rocket after a certain time, given its initial velocity and acceleration.</p>
+<h4 id="given-data">Given Data</h4>
+<ul>
+<li>Initial velocity (<span class="arithmatex">\(v_0\)</span>): 5000.0 m/s (5 significant figures)</li>
+<li>Acceleration (<span class="arithmatex">\(a\)</span>): 9.80665 m/s² (6 significant figures, standard gravity)</li>
+<li>Time (<span class="arithmatex">\(t\)</span>): 3600.0 s (5 significant figures)</li>
+</ul>
+<h4 id="formula">Formula</h4>
+<p>The position (<span class="arithmatex">\(s\)</span>) after time <span class="arithmatex">\(t\)</span> is given by:
+[ s = v_0 t + \frac{1}{2} a t^2 ]</p>
+<h4 id="calculation-with-high-precision">Calculation with High Precision</h4>
+<p>Using all given significant figures:
+[ s = 5000.0 \times 3600.0 + \frac{1}{2} \times 9.80665 \times 3600.0^2 ]
+Performing the calculation:
+[ s = 18000000 + \frac{1}{2} \times 9.80665 \times 12960000 ]
+[ s = 18000000 + 63500418 ]
+[ s = 81500418 \, \text{m} ]</p>
+<h4 id="calculation-with-limited-precision">Calculation with Limited Precision</h4>
+<p>Now, consider using fewer significant figures (e.g., 3 significant figures for each value):
+- Initial velocity (<span class="arithmatex">\(v_0\)</span>): 5000 m/s
+- Acceleration (<span class="arithmatex">\(a\)</span>): 9.81 m/s²
+- Time (<span class="arithmatex">\(t\)</span>): 3600 s</p>
+<p>[ s = 5000 \times 3600 + \frac{1}{2} \times 9.81 \times 3600^2 ]
+Performing the calculation with rounded values:
+[ s = 18000000 + \frac{1}{2} \times 9.81 \times 12960000 ]
+[ s = 18000000 + 63504000 ]
+[ s = 81504000 \, \text{m} ]</p>
+<h4 id="difference-and-impact">Difference and Impact</h4>
+<p>The difference in the two calculations is:
+[ 81504000 \, \text{m} - 81500418 \, \text{m} = 3582 \, \text{m} ]</p>
+<p>This difference of 3582 meters (or 3.582 kilometers) may seem small in absolute terms but is significant in the context of space travel, where precision is critical. Such an error could result in the rocket:
+- Missing its intended orbit.
+- Deviating from its course, leading to mission failure.
+- Colliding with other objects in space or re-entering the Earth's atmosphere at an incorrect angle.</p>
+<h2 id="how-computers-store-numbers">How Computers Store Numbers</h2>
+<p>Computers use binary representation to store and manipulate numbers. Understanding how numbers are stored and how precision works is essential for performing accurate numerical computations. This document explains these concepts in a simple and straightforward manner.</p>
+<h3 id="binary-representation">Binary Representation</h3>
+<p>Computers represent all data, including numbers, using binary (base-2) digits, called bits. Each bit can be either 0 or 1. The binary number system is the foundation for all numerical representation in computers.</p>
+<h4 id="integer-representation">Integer Representation</h4>
+<p>Integers are stored as binary numbers. For example, the decimal number 5 is represented in binary as <span class="arithmatex">\( 101_2 \)</span>:
+[ 5_{10} = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 101_2 ]</p>
+<h4 id="signed-integers">Signed Integers</h4>
+<p>Signed integers use the most significant bit (MSB) as the sign bit. If the sign bit is 0, the number is positive; if it is 1, the number is negative. The most common method for representing signed integers is two's complement.</p>
+<h4 id="twos-complement">Two's Complement</h4>
+<p>In two's complement, a negative number is represented by inverting all the bits of its positive counterpart and adding 1. For example, to represent -5:
+1. Represent 5 in binary: <span class="arithmatex">\( 00000101_2 \)</span>
+2. Invert the bits: <span class="arithmatex">\( 11111010_2 \)</span>
+3. Add 1: <span class="arithmatex">\( 11111010_2 + 1 = 11111011_2 \)</span></p>
+<p>So, -5 is represented as <span class="arithmatex">\( 11111011_2 \)</span>.</p>
+<h3 id="floating-point-representation">Floating-Point Representation</h3>
+<p>Floating-point representation is used to store real numbers (numbers with fractional parts). The IEEE 754 standard is the most widely used standard for floating-point arithmetic.</p>
+<h4 id="ieee-754-standard">IEEE 754 Standard</h4>
+<p>This is the universally accepted representation of floating point number. Adoption of this system as a standard system has eliminated the chaos caused due to porting of codes between different platforms.</p>
+<p>A floating-point number is represented by three components:
+- <strong>Sign bit (S)</strong>: Indicates the sign of the number (0 for positive, 1 for negative).
+- <strong>Exponent (E)</strong>: Encodes the exponent of the number.
+- <strong>Mantissa (M) or Significand</strong>: Represents the significant digits of the number.</p>
+<p>The general form is:
+[ (-1)^S \times 1.M \times 2^{(E - \text{bias})} ]
+where "bias" is a constant that depends on the precision (e.g., 127 for single precision).</p>
+<h4 id="single-precision">Single Precision</h4>
+<p>Single precision uses 32 bits:
+- 1 bit for the sign
+- 8 bits for the exponent
+- 23 bits for the mantissa</p>
+<h4 id="double-precision">Double Precision</h4>
+<p>Double precision uses 64 bits:
+- 1 bit for the sign
+- 11 bits for the exponent
+- 52 bits for the mantissa</p>
+<h3 id="precision-and-accuracy">Precision and Accuracy</h3>
+<p>Precision refers to the number of digits used to represent a number, while accuracy refers to how close the stored number is to the true value. Limited precision can lead to rounding errors and loss of significance.</p>
+<h4 id="rounding-errors_1">Rounding Errors</h4>
+<p>When a number cannot be represented exactly due to limited precision, it is rounded to the nearest representable value. This can introduce small errors.</p>
+<h4 id="loss-of-significance">Loss of Significance</h4>
+<p>When subtracting two nearly equal numbers, significant digits can be lost, leading to a large relative error. This is known as loss of significance.</p>
+<h3 id="examples">Examples</h3>
+<h4 id="binary-representation_1">Binary Representation</h4>
+<ul>
+<li>Decimal 10: <span class="arithmatex">\( 10_{10} = 1010_2 \)</span></li>
+<li>Decimal -10 (two's complement for 8 bits): <span class="arithmatex">\( 10_{10} = 00001010_2 \)</span>, invert bits: <span class="arithmatex">\( 11110101_2 \)</span>, add 1: <span class="arithmatex">\( 11110110_2 \)</span></li>
+</ul>
+<h4 id="floating-point-representation_1">Floating-Point Representation</h4>
+<ul>
+<li>Decimal 5.75 in IEEE 754 single precision:</li>
+<li>Binary: <span class="arithmatex">\( 101.11_2 \)</span></li>
+<li>Normalized: <span class="arithmatex">\( 1.0111_2 \times 2^2 \)</span></li>
+<li>Sign bit: 0, Exponent: <span class="arithmatex">\( 2 + 127 = 129_{10} = 10000001_2 \)</span>, Mantissa: <span class="arithmatex">\( 01110000000000000000000_2 \)</span></li>
+<li>IEEE 754: <span class="arithmatex">\( 0 10000001 01110000000000000000000 \)</span></li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>Understanding how computers store numbers and handle precision is crucial for accurate numerical computations. Binary and floating-point representations are fundamental concepts in computer arithmetic, and being aware of precision issues can help mitigate errors in numerical calculations.</p>
+<h2 id="abstract">Abstract</h2>
+<p>This document explains key concepts in computer memory and processing, including 32-bit and 64-bit architectures, RAM capacity, GPUs, parallel processing, high-performance computing, and quantum computing. These concepts are presented at a level suitable for 12th-grade students.</p>
+<h2 id="computer-memory-and-programming">Computer Memory and Programming</h2>
+<h3 id="role-of-computer-memory-in-programming">Role of Computer Memory in Programming</h3>
+<p>Computer memory is where programs and data are stored while they are being used. Memory allows the CPU (Central Processing Unit) to access instructions and data quickly.</p>
+<p><img alt="CPU and Memory Interaction" src="figure_1.png" /></p>
+<p>When a program runs, it is loaded from storage (like a hard drive) into memory (RAM). The CPU can then fetch and execute instructions from memory.</p>
+<h3 id="32-bit-and-64-bit-architectures">32-bit and 64-bit Architectures</h3>
+<p>Computers can be designed with different architectures, commonly 32-bit or 64-bit. The bit size determines how much data the CPU can process at once and the maximum memory it can use.</p>
+<ul>
+<li><strong>32-bit</strong>: Can handle 4 GB (gigabytes) of RAM. It processes data in 32-bit chunks.</li>
+<li><strong>64-bit</strong>: Can handle much more RAM (up to 16 exabytes). It processes data in 64-bit chunks.</li>
+</ul>
+<p>A 64-bit computer can handle larger amounts of memory and perform more calculations per second compared to a 32-bit computer.</p>
+<h3 id="ram-capacity">RAM Capacity</h3>
+<p>RAM (Random Access Memory) is the temporary storage that a computer uses to hold data and instructions that are being used by the CPU. More RAM allows a computer to run more programs simultaneously and handle larger datasets.</p>
+<p><img alt="Multiple RAM modules in a computer" src="figure_2.png" /></p>
+<h2 id="what-is-a-single-core-processor">What is a Single-core Processor?</h2>
+<p>A single-core processor is a Central Processing Unit (CPU) with only one core. It can execute one instruction sequence at a time. Single-core processors were common in early computers but</p>
+<p>have largely been replaced by multi-core processors in modern systems.</p>
+<h3 id="characteristics-of-single-core-processors">Characteristics of Single-core Processors</h3>
+<ol>
+<li><strong>Single Instruction Stream</strong>: Can only handle one instruction stream at a time, which means it can execute one sequence of instructions sequentially.</li>
+<li><strong>Lower Performance</strong>: Compared to multi-core processors, single-core processors have lower performance because they cannot perform parallel processing.</li>
+<li><strong>Simple Design</strong>: The design of single-core processors is simpler, making them easier to understand and develop.</li>
+</ol>
+<h3 id="example-intel-pentium-4">Example: Intel Pentium 4</h3>
+<p>The Intel Pentium 4 is an example of a single-core processor. It was introduced by Intel in 2000 and was widely used in personal computers throughout the early 2000s.</p>
+<p><img alt="Single-core Processor: Intel Pentium 4" src="figure_3.png" /></p>
+<h3 id="performance-and-usage">Performance and Usage</h3>
+<p>During its time, the Intel Pentium 4 was known for its high clock speeds, often exceeding 3 GHz. However, as software applications and operating systems evolved to take advantage of multiple cores, single-core processors like the Pentium 4 became less efficient for modern computing needs.</p>
+<h2 id="gpus-and-parallel-processing">GPUs and Parallel Processing</h2>
+<h3 id="what-is-a-gpu">What is a GPU?</h3>
+<p>A GPU (Graphics Processing Unit) is a specialized processor designed to accelerate graphics rendering. GPUs are also used for general-purpose computing because they can handle many operations in parallel.</p>
+<p><img alt="GPU with multiple cores" src="figure_4.png" /></p>
+<h3 id="parallel-processing">Parallel Processing</h3>
+<p>Parallel processing is a method where multiple processors or cores perform computations simultaneously. This can significantly speed up complex tasks such as scientific simulations or large-scale data analysis.</p>
+<h2 id="high-performance-computing-hpc">High-Performance Computing (HPC)</h2>
+<h3 id="normal-computing-vs-high-performance-computing">Normal Computing vs. High-Performance Computing</h3>
+<p>Normal computing typically involves a single CPU performing tasks sequentially. High-Performance Computing (HPC) uses multiple CPUs and/or GPUs to perform many tasks in parallel, allowing for much faster processing speeds.</p>
+<ul>
+<li><strong>Normal Computing</strong>: Uses one or few processors. Suitable for everyday tasks.</li>
+<li><strong>High-Performance Computing</strong>: Uses many processors working together. Suitable for complex simulations, scientific research, and large data processing.</li>
+</ul>
+<p><img alt="Normal Computer vs. HPC Cluster" src="figure_5.png" /></p>
+<h3 id="quantum-computing">Quantum Computing</h3>
+<p>Quantum computing is a new type of computing that uses quantum bits (qubits) instead of traditional bits. Qubits can represent both 0 and 1 simultaneously, enabling quantum computers to solve certain problems much faster than classical computers.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../00_introduction/4_faq/" class="btn btn-neutral float-left" title="Where to Find Online Help?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../2_chapter/1_lesson/" class="btn btn-neutral float-right" title="1 lesson">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Site developed and maintained by <a href="https://abhigupta.io">Abhinav Gupta</a></p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../00_introduction/4_faq/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../2_chapter/1_lesson/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
