@@ -141,27 +141,27 @@
 </ul>
 <h4 id="formula">Formula</h4>
 <p>The position (<span class="arithmatex">\(s\)</span>) after time <span class="arithmatex">\(t\)</span> is given by:
-[ s = v_0 t + \frac{1}{2} a t^2 ]</p>
+$$s = v_0 t + \frac{1}{2} a t^2 $$</p>
 <h4 id="calculation-with-high-precision">Calculation with High Precision</h4>
 <p>Using all given significant figures:
-[ s = 5000.0 \times 3600.0 + \frac{1}{2} \times 9.80665 \times 3600.0^2 ]
+$$ s = 5000.0 \times 3600.0 + \frac{1}{2} \times 9.80665 \times 3600.0^2 $$
 Performing the calculation:
-[ s = 18000000 + \frac{1}{2} \times 9.80665 \times 12960000 ]
-[ s = 18000000 + 63500418 ]
-[ s = 81500418 \, \text{m} ]</p>
+$$ s = 18000000 + \frac{1}{2} \times 9.80665 \times 12960000 $$
+$$ s = 18000000 + 63500418 $$
+$$ s = 81500418 \, \text{m} $$</p>
 <h4 id="calculation-with-limited-precision">Calculation with Limited Precision</h4>
 <p>Now, consider using fewer significant figures (e.g., 3 significant figures for each value):
 - Initial velocity (<span class="arithmatex">\(v_0\)</span>): 5000 m/s
 - Acceleration (<span class="arithmatex">\(a\)</span>): 9.81 m/s²
 - Time (<span class="arithmatex">\(t\)</span>): 3600 s</p>
-<p>[ s = 5000 \times 3600 + \frac{1}{2} \times 9.81 \times 3600^2 ]
+<div class="arithmatex">\[ s = 5000 \times 3600 + \frac{1}{2} \times 9.81 \times 3600^2 $$
 Performing the calculation with rounded values:
-[ s = 18000000 + \frac{1}{2} \times 9.81 \times 12960000 ]
-[ s = 18000000 + 63504000 ]
-[ s = 81504000 \, \text{m} ]</p>
+$$ s = 18000000 + \frac{1}{2} \times 9.81 \times 12960000 $$
+$$ s = 18000000 + 63504000 $$
+$$ s = 81504000 \, \text{m} \]</div>
 <h4 id="difference-and-impact">Difference and Impact</h4>
 <p>The difference in the two calculations is:
-[ 81504000 \, \text{m} - 81500418 \, \text{m} = 3582 \, \text{m} ]</p>
+$$ 81504000 \, \text{m} - 81500418 \, \text{m} = 3582 \, \text{m} $$</p>
 <p>This difference of 3582 meters (or 3.582 kilometers) may seem small in absolute terms but is significant in the context of space travel, where precision is critical. Such an error could result in the rocket:
 - Missing its intended orbit.
 - Deviating from its course, leading to mission failure.
@@ -171,16 +171,16 @@ Performing the calculation with rounded values:
 <h3 id="binary-representation">Binary Representation</h3>
 <p>Computers represent all data, including numbers, using binary (base-2) digits, called bits. Each bit can be either 0 or 1. The binary number system is the foundation for all numerical representation in computers.</p>
 <h4 id="integer-representation">Integer Representation</h4>
-<p>Integers are stored as binary numbers. For example, the decimal number 5 is represented in binary as <span class="arithmatex">\( 101_2 \)</span>:
-[ 5_{10} = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 101_2 ]</p>
+<p>Integers are stored as binary numbers. For example, the decimal number 5 is represented in binary as $ 101_2 $:
+$$ 5_{10} = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 101_2 $$</p>
 <h4 id="signed-integers">Signed Integers</h4>
 <p>Signed integers use the most significant bit (MSB) as the sign bit. If the sign bit is 0, the number is positive; if it is 1, the number is negative. The most common method for representing signed integers is two's complement.</p>
 <h4 id="twos-complement">Two's Complement</h4>
 <p>In two's complement, a negative number is represented by inverting all the bits of its positive counterpart and adding 1. For example, to represent -5:
-1. Represent 5 in binary: <span class="arithmatex">\( 00000101_2 \)</span>
-2. Invert the bits: <span class="arithmatex">\( 11111010_2 \)</span>
-3. Add 1: <span class="arithmatex">\( 11111010_2 + 1 = 11111011_2 \)</span></p>
-<p>So, -5 is represented as <span class="arithmatex">\( 11111011_2 \)</span>.</p>
+1. Represent 5 in binary: $ 00000101_2 $
+2. Invert the bits: $ 11111010_2 $
+3. Add 1: $ 11111010_2 + 1 = 11111011_2 $</p>
+<p>So, -5 is represented as $ 11111011_2 $.</p>
 <h3 id="floating-point-representation">Floating-Point Representation</h3>
 <p>Floating-point representation is used to store real numbers (numbers with fractional parts). The IEEE 754 standard is the most widely used standard for floating-point arithmetic.</p>
 <h4 id="ieee-754-standard">IEEE 754 Standard</h4>
@@ -190,7 +190,7 @@ Performing the calculation with rounded values:
 - <strong>Exponent (E)</strong>: Encodes the exponent of the number.
 - <strong>Mantissa (M) or Significand</strong>: Represents the significant digits of the number.</p>
 <p>The general form is:
-[ (-1)^S \times 1.M \times 2^{(E - \text{bias})} ]
+$$ (-1)^S \times 1.M \times 2^{(E - \text{bias})} $$
 where "bias" is a constant that depends on the precision (e.g., 127 for single precision).</p>
 <h4 id="single-precision">Single Precision</h4>
 <p>Single precision uses 32 bits:
@@ -211,16 +211,16 @@ where "bias" is a constant that depends on the precision (e.g., 127 for single p
 <h3 id="examples">Examples</h3>
 <h4 id="binary-representation_1">Binary Representation</h4>
 <ul>
-<li>Decimal 10: <span class="arithmatex">\( 10_{10} = 1010_2 \)</span></li>
-<li>Decimal -10 (two's complement for 8 bits): <span class="arithmatex">\( 10_{10} = 00001010_2 \)</span>, invert bits: <span class="arithmatex">\( 11110101_2 \)</span>, add 1: <span class="arithmatex">\( 11110110_2 \)</span></li>
+<li>Decimal 10: $ 10_{10} = 1010_2 $</li>
+<li>Decimal -10 (two's complement for 8 bits): $ 10_{10} = 00001010_2 $, invert bits: $ 11110101_2 $, add 1: $ 11110110_2 $</li>
 </ul>
 <h4 id="floating-point-representation_1">Floating-Point Representation</h4>
 <ul>
 <li>Decimal 5.75 in IEEE 754 single precision:</li>
-<li>Binary: <span class="arithmatex">\( 101.11_2 \)</span></li>
-<li>Normalized: <span class="arithmatex">\( 1.0111_2 \times 2^2 \)</span></li>
-<li>Sign bit: 0, Exponent: <span class="arithmatex">\( 2 + 127 = 129_{10} = 10000001_2 \)</span>, Mantissa: <span class="arithmatex">\( 01110000000000000000000_2 \)</span></li>
-<li>IEEE 754: <span class="arithmatex">\( 0 10000001 01110000000000000000000 \)</span></li>
+<li>Binary: $ 101.11_2 $</li>
+<li>Normalized: $ 1.0111_2 \times 2^2 $</li>
+<li>Sign bit: 0, Exponent: $ 2 + 127 = 129_{10} = 10000001_2 $, Mantissa: $ 01110000000000000000000_2 $</li>
+<li>IEEE 754: $ 0 10000001 01110000000000000000000 $</li>
 </ul>
 <h3 id="conclusion">Conclusion</h3>
 <p>Understanding how computers store numbers and handle precision is crucial for accurate numerical computations. Binary and floating-point representations are fundamental concepts in computer arithmetic, and being aware of precision issues can help mitigate errors in numerical calculations.</p>
