@@ -16,7 +16,7 @@
                 "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -177,12 +177,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "01f9f9c6e9f233c4",
+  "active": "faead026aa1841dd",
   "lastOpenFiles": [
-    "write_here/docs/2_chapter/1_lesson.md",
+    "write_here/docs/00_introduction/1_motivation.md",
     "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
     "write_here/docs/attachments/Pasted image 20231219133930.png",
-    "write_here/docs/00_introduction/1_motivation.md",
+    "write_here/docs/attachments/poster_for_nitrr.png",
+    "write_here/docs/2_chapter/1_lesson.md",
     "write_here/docs/00_introduction/2_installation.md",
     "docs/00_introduction/4_faq/index.html",
     "docs/00_introduction/3_quickstart/index.html",
@@ -221,11 +222,9 @@
     "mkdocs/docs/3_cyber_learning_tools/1_motivation.md",
     "mkdocs/README.md",
     "mkdocs/docs/1_codes/4_contributing.md",
-    "docs/css/fonts/fontawesome-webfont.svg",
     "admin/architecture.canvas",
     "admin/idp.md",
     "admin/7_meetings/Meeting - 2024-01-09.md",
-    "mkdocs/docs/4_examples/1_examples.md",
     "admin/7_meetings/Untitled.canvas",
     "paint.canvas",
     "plan.canvas",

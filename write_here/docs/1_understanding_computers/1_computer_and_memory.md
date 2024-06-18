@@ -16,37 +16,37 @@ In complex calculations, small rounding errors can accumulate, leading to signif
 Consider a simplified scenario where we need to calculate the position of a rocket after a certain time, given its initial velocity and acceleration.
 
 #### Given Data
-- Initial velocity (\(v_0\)): 5000.0 m/s (5 significant figures)
-- Acceleration (\(a\)): 9.80665 m/s² (6 significant figures, standard gravity)
-- Time (\(t\)): 3600.0 s (5 significant figures)
+- Initial velocity ($v_0$): 5000.0 m/s (5 significant figures)
+- Acceleration ($a$): 9.80665 m/s² (6 significant figures, standard gravity)
+- Time ($t$): 3600.0 s (5 significant figures)
 
 #### Formula
-The position (\(s\)) after time \(t\) is given by:
-\[ s = v_0 t + \frac{1}{2} a t^2 \]
+The position ($s$) after time $t$ is given by:
+$$s = v_0 t + \frac{1}{2} a t^2 $$
 
 #### Calculation with High Precision
 Using all given significant figures:
-\[ s = 5000.0 \times 3600.0 + \frac{1}{2} \times 9.80665 \times 3600.0^2 \]
+$$ s = 5000.0 \times 3600.0 + \frac{1}{2} \times 9.80665 \times 3600.0^2 $$
 Performing the calculation:
-\[ s = 18000000 + \frac{1}{2} \times 9.80665 \times 12960000 \]
-\[ s = 18000000 + 63500418 \]
-\[ s = 81500418 \, \text{m} \]
+$$ s = 18000000 + \frac{1}{2} \times 9.80665 \times 12960000 $$
+$$ s = 18000000 + 63500418 $$
+$$ s = 81500418 \, \text{m} $$
 
 #### Calculation with Limited Precision
 Now, consider using fewer significant figures (e.g., 3 significant figures for each value):
-- Initial velocity (\(v_0\)): 5000 m/s
-- Acceleration (\(a\)): 9.81 m/s²
-- Time (\(t\)): 3600 s
+- Initial velocity ($v_0$): 5000 m/s
+- Acceleration ($a$): 9.81 m/s²
+- Time ($t$): 3600 s
 
-\[ s = 5000 \times 3600 + \frac{1}{2} \times 9.81 \times 3600^2 \]
+$$ s = 5000 \times 3600 + \frac{1}{2} \times 9.81 \times 3600^2 $$
 Performing the calculation with rounded values:
-\[ s = 18000000 + \frac{1}{2} \times 9.81 \times 12960000 \]
-\[ s = 18000000 + 63504000 \]
-\[ s = 81504000 \, \text{m} \]
+$$ s = 18000000 + \frac{1}{2} \times 9.81 \times 12960000 $$
+$$ s = 18000000 + 63504000 $$
+$$ s = 81504000 \, \text{m} $$
 
 #### Difference and Impact
 The difference in the two calculations is:
-\[ 81504000 \, \text{m} - 81500418 \, \text{m} = 3582 \, \text{m} \]
+$$ 81504000 \, \text{m} - 81500418 \, \text{m} = 3582 \, \text{m} $$
 
 This difference of 3582 meters (or 3.582 kilometers) may seem small in absolute terms but is significant in the context of space travel, where precision is critical. Such an error could result in the rocket:
 - Missing its intended orbit.
@@ -60,19 +60,19 @@ Computers use binary representation to store and manipulate numbers. Understandi
 Computers represent all data, including numbers, using binary (base-2) digits, called bits. Each bit can be either 0 or 1. The binary number system is the foundation for all numerical representation in computers.
 
 #### Integer Representation
-Integers are stored as binary numbers. For example, the decimal number 5 is represented in binary as \( 101_2 \):
-\[ 5_{10} = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 101_2 \]
+Integers are stored as binary numbers. For example, the decimal number 5 is represented in binary as $ 101_2 $:
+$$ 5_{10} = 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 101_2 $$
 
 #### Signed Integers
 Signed integers use the most significant bit (MSB) as the sign bit. If the sign bit is 0, the number is positive; if it is 1, the number is negative. The most common method for representing signed integers is two's complement.
 
 #### Two's Complement
 In two's complement, a negative number is represented by inverting all the bits of its positive counterpart and adding 1. For example, to represent -5:
-1. Represent 5 in binary: \( 00000101_2 \)
-2. Invert the bits: \( 11111010_2 \)
-3. Add 1: \( 11111010_2 + 1 = 11111011_2 \)
+1. Represent 5 in binary: $ 00000101_2 $
+2. Invert the bits: $ 11111010_2 $
+3. Add 1: $ 11111010_2 + 1 = 11111011_2 $
 
-So, -5 is represented as \( 11111011_2 \).
+So, -5 is represented as $ 11111011_2 $.
 
 ### Floating-Point Representation
 Floating-point representation is used to store real numbers (numbers with fractional parts). The IEEE 754 standard is the most widely used standard for floating-point arithmetic.
@@ -86,7 +86,7 @@ A floating-point number is represented by three components:
 - **Mantissa (M) or Significand**: Represents the significant digits of the number.
 
 The general form is:
-\[ (-1)^S \times 1.M \times 2^{(E - \text{bias})} \]
+$$ (-1)^S \times 1.M \times 2^{(E - \text{bias})} $$
 where "bias" is a constant that depends on the precision (e.g., 127 for single precision).
 
 #### Single Precision
@@ -112,15 +112,15 @@ When subtracting two nearly equal numbers, significant digits can be lost, leadi
 
 ### Examples
 #### Binary Representation
-- Decimal 10: \( 10_{10} = 1010_2 \)
-- Decimal -10 (two's complement for 8 bits): \( 10_{10} = 00001010_2 \), invert bits: \( 11110101_2 \), add 1: \( 11110110_2 \)
+- Decimal 10: $ 10_{10} = 1010_2 $
+- Decimal -10 (two's complement for 8 bits): $ 10_{10} = 00001010_2 $, invert bits: $ 11110101_2 $, add 1: $ 11110110_2 $
 
 #### Floating-Point Representation
 - Decimal 5.75 in IEEE 754 single precision:
-  - Binary: \( 101.11_2 \)
-  - Normalized: \( 1.0111_2 \times 2^2 \)
-  - Sign bit: 0, Exponent: \( 2 + 127 = 129_{10} = 10000001_2 \), Mantissa: \( 01110000000000000000000_2 \)
-  - IEEE 754: \( 0 10000001 01110000000000000000000 \)
+  - Binary: $ 101.11_2 $
+  - Normalized: $ 1.0111_2 \times 2^2 $
+  - Sign bit: 0, Exponent: $ 2 + 127 = 129_{10} = 10000001_2 $, Mantissa: $ 01110000000000000000000_2 $
+  - IEEE 754: $ 0 10000001 01110000000000000000000 $
 
 ### Conclusion
 Understanding how computers store numbers and handle precision is crucial for accurate numerical computations. Binary and floating-point representations are fundamental concepts in computer arithmetic, and being aware of precision issues can help mitigate errors in numerical calculations.
