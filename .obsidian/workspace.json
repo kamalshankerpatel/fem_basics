@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "write_here/docs/00_introduction/2_installation.md",
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "write_here/docs/00_introduction/2_installation.md",
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "write_here/docs/00_introduction/2_installation.md",
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "write_here/docs/00_introduction/2_installation.md"
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md"
               }
             }
           },
@@ -177,8 +177,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "faead026aa1841dd",
+  "active": "01f9f9c6e9f233c4",
   "lastOpenFiles": [
+    "write_here/docs/2_chapter/1_lesson.md",
+    "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
+    "write_here/docs/attachments/Pasted image 20231219133930.png",
     "write_here/docs/00_introduction/1_motivation.md",
     "write_here/docs/00_introduction/2_installation.md",
     "docs/00_introduction/4_faq/index.html",
@@ -195,7 +198,6 @@
     "docs/attachments/Pasted image 20231219133930.png",
     "docs/attachments",
     "README.md",
-    "write_here/docs/attachments/Pasted image 20231219133930.png",
     "attachments/Pasted image 20240120214426.png",
     "attachments/Pasted image 20240120214354.png",
     "attachments/Pasted image 20240120214240.png",
@@ -225,7 +227,6 @@
     "admin/7_meetings/Meeting - 2024-01-09.md",
     "mkdocs/docs/4_examples/1_examples.md",
     "admin/7_meetings/Untitled.canvas",
-    "admin/6_logs/2023-12-18.md",
     "paint.canvas",
     "plan.canvas",
     "3_our_implementation/2_paper_problems/1_calibration/Untitled.canvas",
