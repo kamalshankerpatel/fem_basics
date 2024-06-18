@@ -1,7 +1,7 @@
 
-### Installation Guide for VS Code, Python, and Necessary Libraries
+## Installation Guide for VS Code, Python, and Necessary Libraries
 
-### Introduction
+## Introduction
 
 This guide will walk you through the steps to install Visual Studio Code (VS Code), Python, and the necessary Python libraries like NumPy on your system. Follow these simple steps to set up your development environment.
 
@@ -59,7 +59,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc sudo sh -c '
     
     - Open VS Code from your application menu or by typing `code` in the terminal.
 
-### Step 2: Install Python
+## Step 2: Install Python
 
 #### For Windows
 
@@ -100,7 +100,7 @@ sudo dnf install python3 python3-pip
 ```
         
 
-### Step 3: Install Necessary Python Libraries
+## Step 3: Install Necessary Python Libraries
 
 1. **Open Terminal or Command Prompt**:
     
@@ -122,7 +122,7 @@ pip install numpy
 ```
 pip install matplotlib scipy
 ```
-### Step 4: Configure VS Code for Python
+## Step 4: Configure VS Code for Python
 
 1. **Open VS Code**:
     

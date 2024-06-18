@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
+                "file": "write_here/docs/00_introduction/2_installation.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
+                "file": "write_here/docs/00_introduction/2_installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
+                "file": "write_here/docs/00_introduction/2_installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md"
+                "file": "write_here/docs/00_introduction/2_installation.md"
               }
             }
           },
@@ -181,6 +181,9 @@
   "lastOpenFiles": [
     "write_here/docs/00_introduction/1_motivation.md",
     "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
+    "docs/1_understanding_computers/1_computer_and_memory/index.html",
+    "docs/1_understanding_computers/1_computer_and_memory",
+    "docs/1_understanding_computers",
     "write_here/docs/attachments/Pasted image 20231219133930.png",
     "write_here/docs/attachments/poster_for_nitrr.png",
     "write_here/docs/2_chapter/1_lesson.md",
@@ -192,12 +195,9 @@
     "docs/00_introduction/4_faq",
     "docs/00_introduction/3_quickstart",
     "docs/00_introduction/2_installation",
-    "docs/00_introduction/1_motivation",
-    "docs/00_introduction",
     "write_here/docs/00_introduction/4_faq.md",
     "write_here/docs/00_introduction/3_quickstart.md",
     "docs/attachments/Pasted image 20231219133930.png",
-    "docs/attachments",
     "README.md",
     "attachments/Pasted image 20240120214426.png",
     "attachments/Pasted image 20240120214354.png",
