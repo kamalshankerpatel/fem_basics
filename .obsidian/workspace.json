@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "write_here/docs/index.md",
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "write_here/docs/index.md",
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "write_here/docs/index.md",
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "write_here/docs/index.md"
+                "file": "write_here/docs/1_understanding_computers/1_computer_and_memory.md"
               }
             }
           },
@@ -179,6 +179,7 @@
   },
   "active": "faead026aa1841dd",
   "lastOpenFiles": [
+    "write_here/docs/index.md",
     "write_here/docs/00_introduction/2_installation.md",
     "docs/attachments/poster_for_nitrr.png",
     "write_here/docs/00_introduction/1_motivation.md",
